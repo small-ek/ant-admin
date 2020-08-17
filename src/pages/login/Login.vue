@@ -150,7 +150,7 @@ export default {
         .title {
           font-size: 33px;
           color: @title-color;
-          font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          font-family: MYFONT;
           font-weight: 600;
           position: relative;
           top: 2px;

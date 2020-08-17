@@ -12,13 +12,6 @@
       </div>
       <div :class="['admin-header-right', headerTheme]">
           <header-search class="header-item" />
-          <a-tooltip class="header-item" title="帮助文档" placement="bottom" >
-            <a href="https://iczer.github.io/vue-antd-admin/" target="_blank">
-              <a-icon type="question-circle-o" />
-            </a>
-          </a-tooltip>
-          <header-notice class="header-item"/>
-          <header-avatar class="header-item"/>
           <a-dropdown class="lang header-item">
             <div>
               <a-icon type="global"/> {{langAlias}}
@@ -27,6 +20,14 @@
               <a-menu-item v-for=" lang in langList" :key="lang.key">{{lang.key.toLowerCase() + ' ' + lang.name}}</a-menu-item>
             </a-menu>
           </a-dropdown>
+          <!-- <a-tooltip class="header-item" title="帮助文档" placement="bottom" >
+            <a href="https://iczer.github.io/vue-antd-admin/" target="_blank">
+              <a-icon type="question-circle-o" />
+            </a>
+          </a-tooltip> -->
+          <!-- <header-notice class="header-item"/> -->
+          <header-avatar class="header-item"/>
+          
       </div>
     </div>
   </a-layout-header>
@@ -47,7 +48,7 @@ export default {
     return {
       langList: [
         {key: 'CN', name: '简体中文', alias: '简体'},
-        {key: 'HK', name: '繁體中文', alias: '繁體'},
+        // {key: 'HK', name: '繁體中文', alias: '繁體'},
         {key: 'US', name: 'English', alias: 'English'}
       ]
     }
