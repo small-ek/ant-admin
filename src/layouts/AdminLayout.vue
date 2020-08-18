@@ -69,6 +69,7 @@ export default {
   },
   created() {
     this.correctPageMinHeight(minHeight - 1)
+
   },
   beforeDestroy() {
     this.correctPageMinHeight(-minHeight + 1)

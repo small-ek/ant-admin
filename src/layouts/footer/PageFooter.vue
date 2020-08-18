@@ -5,9 +5,6 @@
         <a-icon v-if="item.icon" :type="item.icon"/>{{item.name}}
       </a>
     </div>
-    <div class="copyright">
-      Copyright<a-icon type="copyright" />{{copyright}}
-    </div>
   </div>
 </template>
 
